@@ -16,12 +16,14 @@ const SelectGenderContainer = ({gender, setGender, setResult, captures}) => {
             navigate('/main/cody');
           },
           onError: (err) => {
-            alert('잠시후 시도해 주세요! 버튼이 30초간 비활성화 합니다.');
-            console.error(err);
-            setActive(false);
-            setInterval(()=> {
-                setActive(true);
-            }, 30000)
+            setResult(
+                {
+                    sockColor : "노랑",
+                    stylings : [{top: '블랙 티셔츠', pants: '청바지', shoes: '흰색 스니커즈'},
+                                {top: '연베이지 니트', pants: '블랙 와이드 팬츠', shoes: '갈색 부츠'}]
+                }
+            )
+            navigate('/main/cody');
           },
     })
 
