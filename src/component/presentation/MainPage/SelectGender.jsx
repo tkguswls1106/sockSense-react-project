@@ -7,7 +7,7 @@ import ActiveMan from '../../../assets/MainPage/ActiveMan.png'
 import ActiveWoman from '../../../assets/MainPage/ActiveWoman.png'
 import { useTextToSpeech } from '../../../hooks/useTextToSpeech';
 
-const SelectGender = ({gender, setGender, onClick}) => {
+const SelectGender = ({gender, setGender, onClick, isActive}) => {
     const speak = useTextToSpeech();
     return (
         <div className='SelectGender_Container'>
@@ -22,7 +22,7 @@ const SelectGender = ({gender, setGender, onClick}) => {
                     {gender === '남성' ? <img src={ActiveMan} alt='' onClick={()=>setGender()}/> : <img src={Man} alt='' onClick={()=>setGender('남성')}/>}
                     {gender === '여성' ? <img src={ActiveWoman} alt='' onClick={()=>setGender()}/> : <img src={Woman} alt='' onClick={()=>setGender('여성')}/>}
                 </div>
-                <button className='SelectGender_Btn' onClick={onClick}>다음</button>
+                {isActive === true ? <button className='SelectGender_Btn' onClick={onClick}>다음</button> : <button className='SelectGender_Btn' style={{background: "gray"}}>다음</button>}
             </div>
         </div>
     );

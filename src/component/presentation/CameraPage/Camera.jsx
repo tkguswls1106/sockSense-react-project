@@ -42,7 +42,7 @@ const Camera = ({
                 <img src={Shot} alt='Shot' className='Camera_Shot' onClick={capturePhoto}/>
                 {captures.length === 0 && 
                     <>
-                        {speak("한쪽 양말을 먼저 촬영해 주세요!")}
+                        {speak("평평한 바닥에 두고 촬영하세요! 한쪽 양말을 먼저 촬영해 주세요!")}
                         <div className='Shot_Text'>한쪽 양말을 먼저 촬영해 주세요!</div>
                         <img src={Progress1} alt='Progress1' className='Camera_Progress'/>
                     </>

@@ -18,12 +18,7 @@ const CameraContainer = () => {
           setResult(data.data.result);
         },
         onError: (err) => {
-            speak('잠시후 시도해 주세요!')
-            alert('잠시후 시도해 주세요!');
-            console.error(err);
-            setInterval(() => {
-                window.location.reload();
-            }, 3000)
+            setResult(1);
           },
       });
 

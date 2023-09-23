@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../styles/components/CameraPage/resultModal.scss";
-import xicon from "../../../assets/CameraPage/xicon.webp"
-import oicon from "../../../assets/CameraPage/oicon.webp"
+import xicon from "../../../assets/CameraPage/xicon.jpeg"
+import oicon from "../../../assets/CameraPage/oicon.jpeg"
 import { useTextToSpeech } from "../../../hooks/useTextToSpeech";
 
 const ResultModal = ({ result, handleCloseModal, handleRestartCamera }) => {

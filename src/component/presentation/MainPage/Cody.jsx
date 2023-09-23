@@ -17,14 +17,19 @@ const Cody = ({result}) => {
         if (isSaved === false) {
           const key = uuidv4();
           // Check if the key is not one of the unwanted ones
-          if (!['iconify-count', 'iconify0', 'iconify-version'].includes(key) && !localStorage.getItem(`${key}`)) {
+          if (!['iconify-count', 'iconify0', 'iconify-version'].includes(key) && !localStorage.getItem(`${key}`) && localStorage.length < 5) {
             localStorage.setItem(`${key}`, JSON.stringify(result));
             setIsSaved(true);
             setShowAlert(true);
             setTimeout(() => {
               setShowAlert(false);
             }, 3000);
-          }
+          } else {
+            setShowAlert(true);
+            setTimeout(() => {
+                setShowAlert(false);
+              }, 3000);
+          } 
         }
     };
     localStorage.removeItem('iconify-count');
@@ -47,17 +52,17 @@ const Cody = ({result}) => {
                 <div className='Cody_Recommend_LayOut'>
                     <div className='Cody_Recommend_Box'>
                         <img src={Top} alt='' />
-                        {result.stylings[0].top}
+                        {result.stylings[1].top}
                     </div>
                     <div className='Cody_Recommend_Box'>
                         <img src={Pant} alt='' />
-                        {result.stylings[0].pants}
+                        {result.stylings[1].pants}
                     </div>
                     <div className='Cody_Recommend_Box'>
                         <img src={Shoe} alt='' />
-                        {result.stylings[0].shoes}
+                        {result.stylings[1].shoes}
                     </div>
-                    {speak(`상의는 ${result.stylings[0].top}, 하의는 ${result.stylings[0].pants}, 신발은 ${result.stylings[0].shoes}`)}
+                    {speak(`상의는 ${result.stylings[1].top}, 하의는 ${result.stylings[1].pants}, 신발은 ${result.stylings[1].shoes}`)}
                 </div>
                 <div className='Cody_Recommend_Btn_Layout'>
                     <button className='Cody_Recommend_Btn1' onClick = {()=>navigate('/storage')}>종료하기</button>
@@ -65,7 +70,7 @@ const Cody = ({result}) => {
                 </div>
 
                 {showAlert && 
-                 ((localStorage.length < 6) ? 
+                 ((localStorage.length < 5) ? 
                     <div className='Cody_Alert'>양말 코디를 저장했어요!</div> 
                     : 
                     <div className='Cody_Alert'>최대 5개의 코디까지 저장할 수 있습니다.</div>)

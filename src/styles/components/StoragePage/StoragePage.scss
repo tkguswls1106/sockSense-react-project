@@ -99,11 +99,13 @@
 .Storage_Delete_img {
     position: absolute;
     top : 1.2%;
-    right : 3%
+    right : 3%;
+    cursor: pointer;
 }
 
 .Storage_Back_img{
     position: absolute;
+    cursor: pointer;
     top : 3%;
     left : 5%
 }
@@ -115,7 +117,8 @@
     height: 280px;
     overflow: hidden;
   
-    margin : 0 auto;
+    margin-top : 100px;
+    // margin : 0 auto;
   
     .swiper-slide { 
         width: 260px;
@@ -139,7 +142,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 24px; /* 133.333% */
-    margin-top : 140px;
+    margin-top : 70px;
     margin-bottom : 18px;
 }
 

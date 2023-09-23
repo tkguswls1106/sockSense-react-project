@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SelectGender from '../../presentation/MainPage/SelectGender';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from 'react-query';
@@ -7,6 +7,7 @@ import ServerMdoal from '../../presentation/MainPage/ServerModal'
 
 const SelectGenderContainer = ({gender, setGender, setResult, captures}) => {
     const navigate = useNavigate();
+    const [isActive, setActive] = useState(true);
 
     const uploadData = useMutation(postFashion, {
         onSuccess: (data) => {
@@ -15,8 +16,12 @@ const SelectGenderContainer = ({gender, setGender, setResult, captures}) => {
             navigate('/main/cody');
           },
           onError: (err) => {
-            alert('잠시후 시도해 주세요!');
+            alert('잠시후 시도해 주세요! 버튼이 30초간 비활성화 합니다.');
             console.error(err);
+            setActive(false);
+            setInterval(()=> {
+                setActive(true);
+            }, 30000)
           },
     })
 
@@ -39,6 +44,7 @@ const SelectGenderContainer = ({gender, setGender, setResult, captures}) => {
             gender={gender}
             setGender={setGender}
             onClick={onClick}
+            isActive={isActive}
         />
     );
 };

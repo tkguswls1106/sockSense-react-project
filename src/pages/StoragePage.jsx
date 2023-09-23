@@ -142,15 +142,15 @@ const StoragePage = () => {
                         <div className='Storage_Cody_Information'>
                             <div className='Storage_Cody_Information_Detail'>
                                 <div className='Storage_Cody_Information_Detail_Category'>상의</div>
-                                <div className='Storage_Cody_Information_Detail_Text'>{codyDatas[activeIndex]?.stylings[0]?.top}</div>
+                                <div className='Storage_Cody_Information_Detail_Text'>{codyDatas[activeIndex]?.stylings[1]?.top}</div>
                             </div>
                             <div className='Storage_Cody_Information_Detail' style={{borderLeft : '1px solid lightgray', borderRight : '1px solid lightgray'}}>
                                 <div className='Storage_Cody_Information_Detail_Category'>하의</div>
-                                <div className='Storage_Cody_Information_Detail_Text'>{codyDatas[activeIndex]?.stylings[0]?.pants}</div>
+                                <div className='Storage_Cody_Information_Detail_Text'>{codyDatas[activeIndex]?.stylings[1]?.pants}</div>
                             </div>
                             <div className='Storage_Cody_Information_Detail'>
                                 <div className='Storage_Cody_Information_Detail_Category'>신발</div>
-                                <div className='Storage_Cody_Information_Detail_Text'>{codyDatas[activeIndex]?.stylings[0]?.shoes}</div>
+                                <div className='Storage_Cody_Information_Detail_Text'>{codyDatas[activeIndex]?.stylings[1]?.shoes}</div>
                             </div>
                         </div>
                     </div>
