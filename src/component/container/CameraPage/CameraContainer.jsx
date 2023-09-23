@@ -18,7 +18,7 @@ const CameraContainer = () => {
           setResult(data.data.result);
         },
         onError: (err) => {
-            setResult(1);
+            setResult(0);
           },
       });
 
