@@ -1,0 +1,10 @@
+<svg width="23" height="206" viewBox="0 0 23 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5.5" width="12" height="12" rx="6" fill="#E5FF7F" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 12C14.8137 12 17.5 9.31371 17.5 6C17.5 2.68629 14.8137 0 11.5 0C8.18629 0 5.5 2.68629 5.5 6C5.5 9.31371 8.18629 12 11.5 12Z" fill="#E5FF7F"/>
+<rect x="11" y="19.25" width="1" height="65.25" fill="#E5FF7F"/>
+<rect x="5.5" y="91.75" width="12" height="12" rx="6" fill="#E5FF7F" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 103.75C14.8137 103.75 17.5 101.064 17.5 97.75C17.5 94.4363 14.8137 91.75 11.5 91.75C8.18629 91.75 5.5 94.4363 5.5 97.75C5.5 101.064 8.18629 103.75 11.5 103.75Z" fill="#E5FF7F"/>
+<rect x="11" y="111" width="1" height="65.25" fill="#E5FF7F"/>
+<rect x="0.5" y="183.5" width="22" height="22" rx="11" fill="#E5FF7F" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 200.5C14.8137 200.5 17.5 197.814 17.5 194.5C17.5 191.186 14.8137 188.5 11.5 188.5C8.18629 188.5 5.5 191.186 5.5 194.5C5.5 197.814 8.18629 200.5 11.5 200.5Z" fill="#E5FF7F"/>
+</svg>

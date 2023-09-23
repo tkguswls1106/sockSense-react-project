@@ -1,0 +1,54 @@
+.Inf2_Container {
+    display: flex;
+
+    width: 100%;
+    max-width: 450px;
+    height: calc(var(--vh, 1vh) * 100);
+
+    align-items: center;
+    margin : 0 auto;
+
+    position: absolute;
+    z-index: 99;
+    color : white;
+}
+
+.Inf2_Wrapper {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    
+    width: 100%;
+    height : 661px;
+
+    background: black;
+    opacity: 0.92;
+}
+
+.Inf2_TextBox1,
+.Inf2_TextBox2 {
+    position: absolute;
+    width: 295px;
+    height : 48px;
+
+    font-family: Jalpullineunharu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+}
+
+.Inf2_TextBox1 {
+    text-align: right;
+    top : 5.5%;
+    right : 13%;
+    transform : translate(-13%, -5.5%);
+}
+
+.Inf2_TextBox2 {
+    text-align: left;
+    top : 95%;
+    right : 0%;
+    transform : translate(0%, -100%);
+}

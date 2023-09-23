@@ -1,0 +1,86 @@
+.SelectGender_Container {
+    display: flex;
+
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+
+    align-items: center;
+    margin : 0 auto;
+}
+
+.SelectGender_Wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height : 661px;
+
+    background: #1E1F23;
+}
+
+
+.SelectGender_Progress {
+    width: 370px;
+    height : 2px;
+
+    margin-top : 30px;
+    margin-left: auto;
+    margin-right : auto;
+}
+
+.SelectGender_TextBox_LayOut {
+    display: flex;
+    flex-direction: column;
+
+    margin-top : 50px;
+    margin-left : 20px;
+    margin-right : auto;
+
+    color: #FFF;
+    font-family: Pretendard;
+
+
+    .SelectGender_TextBox1 {
+        display: flex;
+        width: 300px;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .SelectGender_TextBox2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.SelectGender_SelectLayOut {
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    height : 180px;
+
+    margin-top : 177px;
+    margin-bottom: 77px;
+    margin-left : auto;
+    margin-right : auto;
+}
+.SelectGender_Btn {
+    display: flex;
+    width: 350px;
+    height : 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    background: #DDFD5C;
+    border : none;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+
+    margin : 0 auto;
+}

@@ -1,0 +1,64 @@
+.Skelethone_Container {
+    display: flex;
+
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+
+    align-items: center;
+    margin : 0 auto;
+}
+
+.Skelethone_Wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height : 661px;
+
+    background: #1E1F23;
+}
+
+.Skelethone_HorizonBar {
+    display: flex;
+
+    width: 350px;
+    height : 2px;
+
+    align-items: flex-start;
+    gap: 4px;
+
+    margin : 30px auto 0 auto;
+
+    .bar {
+        width: 33%;
+        height: 2px;
+        background: #7E7F88;
+    }
+}
+
+.Skelethone_Box_Collection {
+    display: flex;
+    flex-direction: column;
+
+    width: 286px;
+    height : 112px;
+
+    align-items: flex-start;
+    .Skelethone_Box {
+        border-radius: 12px;
+        background:  #27292E;
+        margin-bottom: 20px;
+    }
+
+    margin-top : 50px;
+    margin-left : 20px;
+    margin-right : auto;
+}
+
+.Skelethone_Bottom_Box {
+    border-radius: 16px;
+    background:  #27292E;
+    margin-top: 387px;
+    margin-left : auto;
+    margin-right : auto;
+}

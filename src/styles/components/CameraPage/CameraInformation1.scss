@@ -1,0 +1,56 @@
+.Inf1_Container {
+    display: flex;
+
+    width: 100%;
+    max-width: 450px;
+    height: calc(var(--vh, 1vh) * 100);
+
+    align-items: center;
+    margin : 0 auto;
+
+    position: absolute;
+    z-index: 100;
+}
+
+.Inf1_Wrapper {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    
+    width: 100%;
+    height : 661px;
+
+    background: black;
+    opacity: 0.92;
+}
+
+.Inf1_TextBox {
+    display: flex;
+    flex-direction: column;
+    color : white;
+
+    margin-top : 133px;
+    margin-left: auto;
+    margin-right : auto;
+    
+    .Inf1_Text1 {
+        width: 295px;
+        height: 48px;
+
+        text-align: center;
+        font-family: Jalpullineunharu;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px; /* 120% */
+    }
+    .Inf1_Text2 {
+        margin-top : 42px;
+        width: 295px;
+        text-align: center;
+        font-family: Jalpullineunharu;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 120% */
+    }
+}

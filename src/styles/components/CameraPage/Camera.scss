@@ -1,0 +1,88 @@
+.Camera_Container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    align-items: center;
+    margin : 0 auto;
+}
+
+.Camera_Wrapper {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 661px;
+}
+
+.Camera_Layout {
+    width: 100%;
+    height: 661px;
+    object-fit: cover;
+}
+
+.Camera_Aim,
+.Camera_Heart,
+.Camera_Storage,
+.Camera_Shot {
+    position: absolute;
+}
+
+.Camera_Aim {
+    width: 140px;
+    height: 140px;
+
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+
+.Camera_Heart {
+    width: 90px;
+    height : 90px;
+
+    top : 2%;
+    right : 2%;
+    transform : translate(-2%, -2%);
+}
+
+.Camera_Storage {
+    width: 90px;
+    height : 90px;
+
+    top : 98%;
+    left : 5%;
+    transform : translate(-5%, -100%);
+}
+
+.Camera_Shot {
+    width : 90px;
+    height : 90px;
+
+    top : 98%;
+    left : 50%;
+    transform : translate(-50%, -98%);
+}
+
+.Shot_Text {
+    position: absolute;
+    width: 295px;
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-weight: 500;
+
+    top : 20%;
+    left : 50%;
+    transform : translate(-50%, -20%);
+}
+
+.Camera_Progress {
+    position : absolute;
+    top : 40%;
+    left : 5%;
+    transform : translate(-5%, -20%);
+}

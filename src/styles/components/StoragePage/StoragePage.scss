@@ -1,0 +1,211 @@
+.StoragePage_Container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    align-items: center;
+    margin : 0 auto;
+}
+
+.StoragePage_Null {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #1E1F23;
+
+    .Storage_NullBack_img {
+        position: absolute;
+        top : 3%;
+        left : 5%
+    }
+}
+
+.StoragePage_NullBox {
+    display: flex;
+    flex-direction: column;
+
+    width: 304px;
+    height : 298px;
+
+    align-items: center;
+    justify-content: center;
+
+
+
+    .StoragePage_NullIcon {
+        width: 60px;
+        height : 60px;
+    }
+
+    .StoragePage_NullText1,
+    .StoragePage_NullText2 {
+        color: #FFF;
+        font-family: Pretendard;
+        font-style: normal;
+        line-height: 100%; /* 28px */
+        letter-spacing: 1px;
+    }
+
+    .StoragePage_NullText1{
+        font-size: 28px;
+        font-weight: 700;
+        margin-top : 32px;
+        margin-bottom: 16px;
+    }
+    .StoragePage_NullText2 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 32px;
+    }
+    .StoragePage_NullBtn {
+        display: flex;
+        width: 256px;
+        height : 50px;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 16px;
+        background: #DDFD5C;
+
+        color: #000;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        border: none;
+    }
+}
+
+.StoragePage_Wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+    background: #1E1F23;
+}
+
+.Storage_Delete_img {
+    position: absolute;
+    top : 1.2%;
+    right : 3%
+}
+
+.Storage_Back_img{
+    position: absolute;
+    top : 3%;
+    left : 5%
+}
+
+.swiper-container {
+    position:relative;
+    display: flex;
+    width: 100%; 
+    height: 280px;
+    overflow: hidden;
+  
+    margin : 0 auto;
+  
+    .swiper-slide { 
+        width: 260px;
+        height: 280px;
+        display:flex; 
+        justify-content:center; 
+        scale: 0.85;
+
+        &.swiper-slide-active{
+            display: flex;
+            width: 260px;
+            height: 280px;
+            scale: 1;
+        }
+  }
+}
+.Storage_Cody_Information_Text {
+    color: #FFF;
+    font-family: Pretendard;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+    margin-top : 140px;
+    margin-bottom : 18px;
+}
+
+.Storage_Cody_Information_Layout {
+    display: flex;
+    flex-direction: column;
+
+    width: 330px;
+    height : 80px;
+
+    border-radius: 12px;
+    background: #303237;
+
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 14px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.Storage_Cody_Information {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    margin : 0 auto;
+}
+
+.Storage_Cody_Information_Detail {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height : 36px;
+
+    text-align: center;
+
+
+    .Storage_Cody_Information_Detail_Category {
+        color: #FFF;
+        font-family: Pretendard;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 12px */
+        letter-spacing: 0.733px;
+    }
+
+    .Storage_Cody_Information_Detail_Text {
+        display: flex;
+        width : 100%;
+        margin-left : auto;
+        margin-right : auto;
+        color: #FFF;
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 14px */
+        letter-spacing: -1px;
+
+        margin-top : 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
